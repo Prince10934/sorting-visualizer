@@ -1,0 +1,137 @@
+.nav-center {
+  padding: 1rem;
+  background-color: #2196f3;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (max-width: 800px) {
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.form-section {
+  background-color: white;
+  text-align: center;
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.form-section h3 {
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+}
+.btn {
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.radio-container {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear 0s;
+}
+.radio-container li {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0;
+}
+.label {
+  margin: 0 0.5rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.radio {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.speed:hover .speed-heading {
+  border-radius: 0;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.speed:hover .speed-item {
+  height: 98.4px;
+}
+.algorithm:hover .algorithm-heading {
+  border-radius: 0;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.algorithm:hover .algorithm-item {
+  height: 131.2px;
+}
+.range:hover .range-heading {
+  border-radius: 0;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.range:hover .range-item {
+  height: 36px;
+}
+.range-item li {
+  padding: 0.75rem 0;
+}
+.slider {
+  -webkit-appearance: none;
+  border-radius: 1rem;
+  height: 0.75rem;
+  width: 90%;
+  margin: 0 auto;
+  background: #2196f3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: black;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 1.25rem;
+  height: 1.25rem;
+  background: black;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.bars {
+  padding: 1rem;
+  display: flex;
+  list-style: none;
+}
+.bar {
+  flex-grow: 1;
+  margin: 0 0.1rem;
+  background-color: blue;
+}
