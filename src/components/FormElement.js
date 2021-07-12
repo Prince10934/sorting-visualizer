@@ -1,10 +1,12 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import RadioAction from "../actions/RadioAction";
+import TimeoutAction from "../actions/TimeoutAction";
 const FormElement = ({ name, arr }) => {
   const dispatch = useDispatch();
   const changeValue = (value) => {
     dispatch(RadioAction(value));
+    dispatch(TimeoutAction(false));
   };
   return (
     <section className={`form-section ${name}`}>

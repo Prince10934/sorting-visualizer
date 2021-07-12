@@ -1,4 +1,4 @@
-const RadioReducer = (state = { algorithm: null, speed: null }, action) => {
+const RadioReducer = (state = { algorithm: "bubble", speed: 0 }, action) => {
   switch (action.type) {
     case "bubble sort":
       return { ...state, algorithm: "bubble" };
@@ -9,11 +9,11 @@ const RadioReducer = (state = { algorithm: null, speed: null }, action) => {
     case "heap sort":
       return { ...state, algorithm: "heap" };
     case "fast":
-      return { ...state, speed: "fast" };
+      return { ...state, speed: 0 };
     case "average":
-      return { ...state, speed: "average" };
+      return { ...state, speed: 150 };
     case "slow":
-      return { ...state, speed: "slow" };
+      return { ...state, speed: 300 };
     default:
       return state;
   }
